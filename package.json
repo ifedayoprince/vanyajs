@@ -1,7 +1,7 @@
 {
-  "name": "vanyajs",
+  "name": "@ifedayoprince/vanyajs",
   "private": false,
-  "version": "2.0.4",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.4.0",
   "repository": {
     "type": "git",
