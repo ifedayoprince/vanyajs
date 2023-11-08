@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 800 800" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0" id="gradient_1">
+      <stop offset="0%" stop-color="#521600" />
+      <stop offset="100%" stop-color="#524400" />
+    </linearGradient>
+    <path d="M800 0L800 0L800 800L0 800L0 0L800 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="logo" clip-path="url(#clip_1)">
+    <path d="M800 0L800 0L800 800L0 800L0 0L800 0Z" id="logo" fill="#000000" stroke="none" />
+    <path d="M0 0L800 0L800 800L0 800L0 0Z" id="Rectangle" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+    <g id="Group" transform="matrix(0 0.99999994 -0.99999994 0 554.62024 246)">
+      <path d="M216.458 0C220.876 0 224.458 3.58112 224.458 8L224.458 60.7854C224.458 65.2043 220.876 68.7854 216.458 68.7854L8 68.7854C3.58112 68.7854 0 65.2043 0 60.7854L0 8C0 3.58112 3.58112 0 8 0L216.458 0Z" id="Rectangle" fill="#FFC107" stroke="none" />
+      <path d="M299 149.88C303.419 149.88 307 153.461 307 157.88L307 210.665C307 215.084 303.419 218.665 299 218.665L90.5424 218.665C86.1236 218.665 82.5424 215.084 82.5424 210.665L82.5424 157.88C82.5424 153.461 86.1236 149.88 90.5424 149.88L299 149.88Z" id="Rectangle-Copy" fill="#FFC107" stroke="none" />
+      <path d="M124.502 91.9552C128.921 91.9552 132.502 95.5363 132.502 99.9552L132.502 118.71C132.502 123.129 128.921 126.71 124.502 126.71L52.8915 126.71C48.4726 126.71 44.8915 123.129 44.8915 118.71L44.8915 99.9552C44.8915 95.5363 48.4726 91.9552 52.8915 91.9552L124.502 91.9552Z" id="Rectangle-Copy-2" fill="#FFC107" stroke="none" />
+      <path d="M216.458 241.835C220.876 241.835 224.458 245.416 224.458 249.835L224.458 302.62C224.458 307.039 220.876 310.62 216.458 310.62L8 310.62C3.58112 310.62 0 307.039 0 302.62L0 249.835C0 245.416 3.58112 241.835 8 241.835L216.458 241.835Z" id="Rectangle-Copy-6" fill="#FFC107" stroke="none" />
+    </g>
+  </g>
+</svg>
