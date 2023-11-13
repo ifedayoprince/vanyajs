@@ -4,12 +4,12 @@ import { useEffect, useRef } from 'react'
 export const OldNumberedSlidePanel = () => {
   return (
     <div className="vanya-element numbered-slide-panel w-full h-screen flex p-8 justify-stretch bg-gray-200 gap-4">
+      <input type="radio" name="slide" id="c1 group" />
       <label
         htmlFor="c1"
         className="slide cursor-pointer p-5 w-full flex flex-col justify-between items-start bg-black rounded-[2rem] min-w-[5rem] h-full text-white"
       >
-        <input type="radio" name="slide" id="c1 group" />
-        {/* <div></div> */}
+        <div></div>
         <footer className="flex gap-4">
           <p className="num aspect-square w-12 bg-gray-900 text-gray-400 flex items-center justify-center rounded-full">
             1
@@ -75,6 +75,14 @@ export const NumberedSlidePanel = () => {
         duration: 0.4,
       },
     )
+    // gsap.to(
+    //   el.querySelectorAll("input[name='slide']:not(:checked) ~ label .description *"),
+    //   {
+    //     y: "100%",
+    //     opacity: 0,
+    //     stagger: 0.3,
+    //     duration: 0.4,
+    //   })
   }
 
   return (
@@ -85,13 +93,16 @@ export const NumberedSlidePanel = () => {
         className="min-w-[6rem] group peer-[#c1:checked]/radio:w-full flex flex-col justify-between p-6 w-[6rem] bg-black rounded-3xl h-full [transition:.6s_cubic-bezier(.28,-0.03,0,.99)] overflow-hidden"
       >
         <div></div>
-        <div className="flex items-end gap-6">
+        <div className="flex items-end gap-6 overflow-hidden">
           <div className="bg-gray-900 text-gray-400 aspect-square flex items-center justify-center w-12 h-12 rounded-full">
             1
           </div>
-          <div className="description opacity-0 translate-y-full overflow-hidden min-w-max">
+          <div className="description overflow-hidden min-w-max">
             <h3 className="m-0 p-0 text-xl min-w-max text-white font-bold">Winter</h3>
-            <p className="text-gray-300 min-w-max">Winter has so mych to offer creative activities</p>
+            <p className="text-gray-300 min-w-max">
+              Winter has so mych to offer creative activities. Winter has so mych to offer creative activities. Winter
+              has so mych to offer creative activities
+            </p>
           </div>
         </div>
       </label>
@@ -105,7 +116,7 @@ export const NumberedSlidePanel = () => {
           <div className="bg-gray-900 text-gray-400 aspect-square flex items-center justify-center w-12 h-12 rounded-full">
             2
           </div>
-          <div className="description opacity-0 translate-y-full overflow-hidden min-w-max">
+          <div className="description overflow-hidden min-w-max">
             <h3 className="m-0 p-0 text-xl min-w-max text-white font-bold">Winter</h3>
             <p className="text-gray-300 min-w-max">Winter has so mych to offer creative activities</p>
           </div>
@@ -121,7 +132,7 @@ export const NumberedSlidePanel = () => {
           <div className="bg-gray-900 text-gray-400 aspect-square flex items-center justify-center w-12 h-12 rounded-full">
             3
           </div>
-          <div className="description opacity-0 translate-y-full overflow-hidden min-w-max">
+          <div className="description overflow-hidden min-w-max">
             <h3 className="m-0 p-0 text-xl min-w-max text-white font-bold">Winter</h3>
             <p className="text-gray-300 min-w-max">Winter has so mych to offer creative activities</p>
           </div>
@@ -144,7 +155,7 @@ export const NumberedSlidePanel = () => {
           <div className="bg-gray-900 text-gray-400 aspect-square flex items-center justify-center w-12 h-12 rounded-full">
             4
           </div>
-          <div className="description opacity-0 translate-y-full overflow-hidden min-w-max">
+          <div className="description overflow-hidden min-w-max">
             <h3 className="m-0 p-0 text-xl min-w-max text-white font-bold">Winter</h3>
             <p className="text-gray-300 min-w-max">Winter has so mych to offer creative activities</p>
           </div>

@@ -1,1 +1,1 @@
-// export * from './numbered-slide-panel'
+export * from './rubber-band-nav'
