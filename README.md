@@ -1,6 +1,6 @@
 # ⚛️⚡ VanyaJS - Design In Simple Terms
 
-Awesome in SimpleTerms!! Powering the modern web.
+Awesome in Simple Terms!! Powering the modern web.
 
 ![Vanya logo](/assets/logo.svg)
 
