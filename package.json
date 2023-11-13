@@ -1,5 +1,5 @@
 {
-  "name": "@ifedayoprince/vanyajs",
+  "name": "vanyajs",
   "version": "0.0.1",
   "packageManager": "pnpm@8.4.0",
   "repository": {
