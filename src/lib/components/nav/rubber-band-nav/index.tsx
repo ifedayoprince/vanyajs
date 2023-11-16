@@ -1,4 +1,4 @@
-import gsap from 'gsap'
+// import gsap from 'gsap'
 import { Menu } from 'iconsax-react'
 
 const RubberBandNav = () => {
