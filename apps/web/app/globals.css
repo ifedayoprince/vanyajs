@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@keyframes animate-conic {
+    0% {
+        background-image: conic-gradient( from 180deg at 50% 50%, #f65702 0deg, blue 180deg, #e92a67 360deg );
+    }
+    40% {
+        opacity: 0.2;
+    }
+    60% {
+        opacity: 0.15;
+    }
+    100% {
+        background-image: linear-gradient(to 180deg,blue, #f65702, #e92a67);
+    }
+}
+.header-bg {
+    background-image: conic-gradient( from 180deg at 50% 50%, #f65702 0deg, blue 180deg, #e92a67 360deg );
+    opacity: 0.15;
+    filter: blur(75px);
+    animation: animate-conic 20s infinite ease-in-out alternate-reverse;
+}
+.smaller-bg {
+    background-image: conic-gradient( from 180deg at 50% 50%, #f65702 0deg, blue 180deg, #e92a67 360deg );
+    backdrop-filter: blur(75px);
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="531.74414px" height="531.74414px" viewBox="0 0 531.74414 531.74414" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0.5" y1="1.5171922" x2="0.5" y2="-0.4519231" id="gradient_1">
+      <stop offset="0%" stop-color="#155CDE" />
+      <stop offset="27.8%" stop-color="#1F7FE5" />
+      <stop offset="56.9%" stop-color="#279CEB" />
+      <stop offset="82%" stop-color="#2CAFEF" />
+      <stop offset="100%" stop-color="#2EB5F0" />
+    </linearGradient>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0.49999455" y1="1.0032475" x2="0.49999455" y2="-0.014827333" id="gradient_2">
+      <stop offset="0%" stop-color="#155CDE" />
+      <stop offset="27.8%" stop-color="#1F7FE5" />
+      <stop offset="56.9%" stop-color="#279CEB" />
+      <stop offset="82%" stop-color="#2CAFEF" />
+      <stop offset="100%" stop-color="#2EB5F0" />
+    </linearGradient>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0.5000136" y1="0.99600303" x2="0.5000136" y2="-0.00086624175" id="gradient_3">
+      <stop offset="0%" stop-color="#155CDE" />
+      <stop offset="27.8%" stop-color="#1F7FE5" />
+      <stop offset="56.9%" stop-color="#279CEB" />
+      <stop offset="82%" stop-color="#2CAFEF" />
+      <stop offset="100%" stop-color="#2EB5F0" />
+    </linearGradient>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0.5" y1="1" x2="0.5" y2="0" id="gradient_4">
+      <stop offset="0%" stop-color="#155CDE" />
+      <stop offset="27.8%" stop-color="#1F7FE5" />
+      <stop offset="56.9%" stop-color="#279CEB" />
+      <stop offset="82%" stop-color="#2CAFEF" />
+      <stop offset="100%" stop-color="#2EB5F0" />
+    </linearGradient>
+    <path d="M-2023.13 -5222.13L-1647.13 -5222.13L-1647.13 -4846.13L-2023.13 -4846.13L-2023.13 -5222.13Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="React Native Copy" clip-path="url(#clip_1)" transform="matrix(0.70710677 0.70710677 -0.70710677 0.70710677 265.87207 0)">
+    <path d="M-2023.13 -5222.13L-1647.13 -5222.13L-1647.13 -4846.13L-2023.13 -4846.13L-2023.13 -5222.13Z" id="React-Native-Copy" fill="none" stroke="none" />
+    <path d="M188.003 264.376C90.8721 264.376 17.6284 231.541 17.6284 188.001C17.6284 144.462 90.8721 111.626 188.003 111.626C285.129 111.626 358.379 144.462 358.379 188.001C358.379 231.541 285.129 264.376 188.003 264.376L188.003 264.376ZM188.003 135.126C103.938 135.126 41.1279 163.038 41.1279 188.001C41.1279 212.958 103.938 240.876 188.003 240.876C272.068 240.876 334.878 212.958 334.878 188.001C334.878 163.038 272.068 135.126 188.003 135.126L188.003 135.126Z" id="Shape" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+    <path d="M252.445 340.881C236.324 340.881 217.418 332.885 197.302 317.258C170.577 296.502 143.787 264.16 121.855 226.178C73.2925 142.065 65.1028 62.2182 102.809 40.4454L102.809 40.4454C140.508 18.6727 205.574 65.6903 254.143 149.803C276.068 187.785 290.685 227.159 295.297 260.676C300.402 297.771 292.547 324.361 273.183 335.535C266.991 339.119 260.023 340.881 252.445 340.881L252.445 340.881ZM114.56 60.8025C92.9456 73.281 100.178 141.637 142.207 214.434C162.652 249.842 187.339 279.77 211.715 298.705C232.624 314.937 251.2 321.118 261.435 315.19C271.669 309.286 275.623 290.104 272.015 263.89C267.809 233.316 254.238 196.973 233.787 161.565C191.763 88.7675 136.203 48.3417 114.56 60.8025L114.56 60.8025L114.56 60.8025Z" id="Shape" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+    <path d="M123.437 340.851C115.952 340.851 109.008 339.135 102.809 335.558C83.4513 324.377 75.5964 297.793 80.7018 260.698C85.3137 227.176 99.9248 187.801 121.856 149.825L121.856 149.825C143.782 111.849 170.577 79.5015 197.303 58.751C226.866 35.7797 253.814 29.282 273.184 40.468C292.548 51.6422 300.403 78.2325 295.298 115.327C290.686 148.85 276.075 188.224 254.143 226.2C213.565 296.471 161.471 340.851 123.437 340.851L123.437 340.851ZM142.208 161.57C121.769 196.973 108.191 233.316 103.985 263.895C100.378 290.115 104.332 309.297 114.56 315.195C136.186 327.703 191.763 287.242 233.787 214.445C254.232 179.036 267.809 142.699 272.016 112.12C275.623 85.9058 271.669 66.7239 261.435 60.8137C251.224 54.9152 232.624 61.0722 211.715 77.3048C187.339 96.2341 162.653 126.161 142.208 161.57L142.208 161.57L142.208 161.57Z" id="Shape" fill="url(#gradient_3)" fill-rule="evenodd" stroke="none" />
+    <path d="M158.625 188.001C158.625 171.777 171.777 158.626 188 158.626C204.224 158.626 217.375 171.777 217.375 188.001C217.375 204.224 204.224 217.376 188 217.376C171.777 217.376 158.625 204.224 158.625 188.001Z" id="Circle" fill="url(#gradient_4)" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>
