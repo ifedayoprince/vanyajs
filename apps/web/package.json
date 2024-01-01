@@ -15,7 +15,7 @@
     "@types/react-dom": "^18.2.18",
     "autoprefixer": "^10.4.16",
     "gsap": "^3.12.2",
-    "next": "13.4.19",
+    "next": "13.5.1",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "postcss": "^8.4.32",
