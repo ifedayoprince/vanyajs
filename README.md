@@ -6,6 +6,7 @@ Design for the new wave.
 
 ## Features
 
+
 - ⚛️ [React 18](https://reactjs.org/)
 - 📚 [Storybook 7](https://storybook.js.org/) - Components preview
 - 🖌️ [Tailwind CSS 3](https://tailwindcss.com/)
