@@ -1,47 +1,27 @@
 import Image from "next/image"
 import { useState, useRef, useEffect } from "react";
-import { FaFlask } from "react-icons/fa6"
+import { FaChevronDown, FaFlask } from "react-icons/fa6"
 import gsap from 'gsap'
 
 
 export const VanyaHeader: React.FC = () => {
 	const [_window, setWindowObject] = useState<null | Window>(null)
-	const cursor = useRef<HTMLDivElement | null>(null);
+	const content = useRef<HTMLDivElement | null>(null);
 
 	useEffect(() => {
 		setWindowObject(window);
-		_window?.addEventListener("mouseenter", (ev) => {
-			gsap.set(cursor.current, { visibility: "visible" })
-			gsap.to(cursor.current, {
-				x: ev.clientX,
-				y: ev.clientY
-			})
-		})
-		_window?.addEventListener("mousemove", (ev) => {
-			gsap.set(cursor.current, { visibility: "visible" })
-			gsap.to(cursor.current, {
-				x: ev.clientX,
-				y: ev.clientY
-			})
-		})
-		_window?.addEventListener("mouseexit", (ev) => {
-			gsap.to(cursor.current, {
-				opacity: 0,
-				visibility: "hidden",
-				duration: 2
-			})
+		gsap.fromTo(content.current?.querySelector("#chevron") as Element, {
+			opacity: 0.1,
+			y: -20
+		}, {
+			opacity: 0.7,
+			y: 20,
+			duration: 0.8,
+			repeat: -1
 		})
 	})
 	return (
-		<header className="relative w-full py-28 flex items-center justify-center">
-			<div ref={cursor} className='bg-white pointer-events-none -top-3 -left-3 text-black rounded-full aspect-square min-w-6 min-h-6 flex items-center justify-center p-4 fixed z-[100] invisible text-center'></div>
-			<Image
-				src={"/circles.svg"}
-				width={614}
-				height={614}
-				alt="circle"
-				className="absolute -bottom-[307px] -left-[307px] min-w-[614px] min-h-[614px] pointer-events-none"
-			/>
+		<header className="relative h-screen w-full py-28 flex items-center justify-center">
 			<div className="flex flex-col gap-4 items-center">
 				<div className="p-6 rounded-full bg-[hsl(252,36%,5%)] border border-[#161226]">
 					<Image
@@ -52,12 +32,13 @@ export const VanyaHeader: React.FC = () => {
 						className="w-24 h-24"
 					/>
 				</div>
-				<div className="flex flex-col gap-3 items-center text-center">
+				<div className="flex flex-col gap-3 items-center text-center" ref={content}>
 					<h1 className="text-white text-4xl font-bold flex gap-2 items-center ">
 						Vanya.js
 						<FaFlask className="p-2 bg-orange-600 rounded-full text-white" />
 					</h1>
 					<p className="text-gray-300 text-center">The web has evolved, have you? Design for the new wave <strong className="text-blue-500 font-bold italic">#TheNewWeb</strong></p>
+					<FaChevronDown className="scale-150 text-white absolute bottom-10" id="chevron"/>
 				</div>
 			</div>
 		</header>

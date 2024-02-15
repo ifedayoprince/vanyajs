@@ -8,6 +8,12 @@ module.exports = {
     './theme.config.tsx',
   ],
   theme: {
+    extend: {
+      colors: {
+        "sharp": "#ffffff20",
+        "thicksharp": "#ffffff60"
+      }
+    }
   },
   plugins: [
     require("@savvywombat/tailwindcss-grid-areas")
