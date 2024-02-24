@@ -1,8 +1,8 @@
 import './globals.css';
 import { Rubik } from 'next/font/google'
 import { NavBar } from './components/NavBar';
-import {Footer} from './components/Footer';
-
+import { Footer } from './components/Footer';
+import { Analytics } from "@vercel/analytics/react"
 
 const rubik = Rubik({
     subsets: [
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
             <body className={`${rubik.className}`}>
                 <NavBar />
                 {children}
-
+                <Analytics />
                 <Footer />
             </body>
         </html>

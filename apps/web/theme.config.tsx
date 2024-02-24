@@ -6,11 +6,15 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 import { Footer } from './app/components/Footer'
 import { Logo } from './app/components/Logo'
 
+import { Analytics } from "@vercel/analytics/react"
+
+
 const config: DocsThemeConfig = {
   logo: (
     <div className="flex items-center gap-1 font-bold">
       <Logo className="h-6" />
       Vanya.js
+      <Analytics />
     </div>),
   project: {
     link: 'https://github.com/ifedayoprince/vanya',
