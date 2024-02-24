@@ -3,60 +3,39 @@ import Image from 'next/image'
 import './app/globals.css'
 
 import { DocsThemeConfig } from 'nextra-theme-docs'
-import { Footer } from './app/_components/Footer'
-import { FaWhatsapp } from 'react-icons/fa6'
+import { Footer } from './app/components/Footer'
+import { Logo } from './app/components/Logo'
 
 const config: DocsThemeConfig = {
-  
   logo: (
-    <div className="flex gap-2 items-center">
-      <Image src={'/logo.png'} width={40} height={40} className="h-full aspect-square" alt="site logo" />
-      <h3 className="font-bold text-xl">Vanya.js</h3>
+    <div className="flex items-center gap-1 font-bold">
+      <Logo className="h-6" />
+      Vanya.js
     </div>),
   project: {
     link: 'https://github.com/ifedayoprince/vanya',
   },
   primaryHue: {
-    dark: 19,
-    light: 19
-  },
-  darkMode: true,
-  chat: {
-    link: "https://wa.me/+2349039630470",
-    icon: <FaWhatsapp className='scale-[1.5]'/>
+    dark: 32,
+    light: 32
   },
   useNextSeoProps() {
     return {
-      titleTemplate: "%s - Vanya Docs"
+      titleTemplate: "%s - Vanya"
     }
   },
-  docsRepositoryBase: 'https://github.com/ifedayoprince/vanya.js.org/tree/master/pages/docs',
+  docsRepositoryBase: 'https://github.com/ifedayoprince/vanya/tree/master/app/web/pages/docs',
   footer: {
-    text: (
-      <span>
-        MIT {new Date().getFullYear()} ©{' '}
-        <a href="https://nextra.site" target="_blank">
-          VanyaJS
-        </a>
-        .
-      </span>
-    )
-  },
-  editLink: {
-    text: <p>Edit this page</p>
-  },
-  toc: {
-    float: true
+    text: <Footer />
   },
   banner: {
-    key: 'experimental-release',
+    key: '0.0.1-experimental',
     text: (
       <a href="https://npmjs.com/package/vanya" target="_blank">
-        🌟 Vanya is still experimental for now. We'll let you know once it's stable!
+        🌟 Vanya is still experimental for now.
       </a>
     )
   }
-,
 }
 
 export default config

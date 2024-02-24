@@ -1,72 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind variants;
 
-@keyframes animate-conic {
-    0% {
-        background-image: conic-gradient(from 180deg at 50% 50%, #f65702 0deg, blue 180deg, #e92a67 360deg);
-    }
 
-    40% {
-        opacity: 0.2;
-    }
+@keyframes rotate-bg {
+  from {
+    background-position: 0% 50%;
+  }
 
-    60% {
-        opacity: 0.15;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-image: linear-gradient(to 180deg, blue, #f65702, #e92a67);
-    }
+  to {
+    background-position: 0% 50%;
+  }
 }
 
-@keyframes animate-gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@layer utilities {
-    .header-bg {
-        background-image: conic-gradient(from 180deg at 50% 50%, #f65702 0deg, blue 180deg, #e92a67 360deg);
-        opacity: 0.15;
-        filter: blur(75px);
-        animation: animate-conic 20s infinite ease-in-out alternate-reverse;
-    }
-
-    .smaller-bg {
-        background-image: conic-gradient(from 180deg at 50% 50%, #f65702 0deg, blue 180deg, #e92a67 360deg);
-        backdrop-filter: blur(75px);
-    }
-
-
-    .hover-gradient {
-        --borderWidth: 2px;
-        position: relative;
-        background-color: #00000030;
-        transition: all 400ms ease-in;
-    }
-
-    .hover-gradient:hover {
-        background-image: red;
-        transform: translate(0px, -20px);
-        box-shadow: 0px 10px 0px whitesmoke;
-        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-        animation: animate-gradient 3s ease alternate infinite;
-        background-size: 300% 300%;
-    }
-
-    .hover-gradient::after {
-        transition: all 4s;
-    }
-
+.moving-bg {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom right, #f97316, #ef4444, #a855f7, #eab308);
+  background-size: 400% 400%;
+  animation: rotate-bg 10s ease infinite alternate-reverse;
 }

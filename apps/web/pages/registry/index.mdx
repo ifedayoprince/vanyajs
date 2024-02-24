@@ -1,0 +1,38 @@
+---
+title: Registry
+---
+
+import { Cards, Card } from 'nextra/components'
+
+<h1 className='font-black text-7xl text-center my-5 mb-8 text-transparent bg-clip-text bg-gradient-to-b from-gray-400 to-gray-500 [line-height:6rem]'>Registry</h1>
+
+<Cards>
+   <PkgCard title="The Graph" href="https://thegraph.com/docs/en">
+    <>![The Graph preview](./../pkgs/images/img-1.jpg)</>
+  </PkgCard>
+  <Card title="Steps" href="/docs/guide/built-ins/steps" />
+  <Card title="Steps" href="/docs/guide/built-ins/steps" />
+  <Card title="Steps" href="/docs/guide/built-ins/steps" />
+  <Card title="Steps" href="/docs/guide/built-ins/steps" />
+</Cards>
+
+
+export const PkgCard = Object.assign(
+  // Copy card component and add default props
+  Cards.Card.bind(),
+  {
+    displayName: 'PkgCard',
+    defaultProps: {
+      image: true,
+      arrow: true,
+      target: '_blank'
+    }
+  }
+)
+
+<style global jsx>{`
+  img {
+    aspect-ratio: 12/6.3;
+    object-fit: cover;
+  }
+`}</style>

@@ -1,0 +1,30 @@
+import { Steps } from 'nextra/components'
+import { Callout } from 'nextra/components'
+
+
+# How It Works
+
+VanyaJS is divided into 2 parts:
+- The CLI
+- The Registry
+ 
+<Callout type="info">
+  The NPM installation of Vanya installs just the CLI.
+</Callout>
+
+
+## Adding a Component
+
+```sh copy
+vanya add fade-card
+```
+
+Vanya checks its cache if the component is already downloaded.
+If not, it fetches the component from its remote registry and caches it.
+
+The component is then moved from the cache to your project's directory.
+
+
+### Ready to Go!
+
+That is it, all it takes to setup your **storytelling** framework

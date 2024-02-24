@@ -1,0 +1,14 @@
+{
+  "index": {
+    "title": "All Components",
+    "theme": {
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": false,
+      "pagination": false
+    }
+  },
+
+  
+  "installation": "Installation"
+}

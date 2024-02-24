@@ -1,3 +1,10 @@
 {
-  "docs": "Documentation"
+  "docs": {
+    "title": "Docs",
+    "type": "page"
+  },
+  "registry": {
+    "title": "Registry",
+    "type": "page"
+  }
 }

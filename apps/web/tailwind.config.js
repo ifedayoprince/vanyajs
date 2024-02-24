@@ -1,21 +1,35 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: 'jit',
+  darkMode: ["class"],
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './theme.config.tsx',
+    './pages/**/*.{js,jsx,ts,tsx,md,mdx}',
+    './components/**/*.{js,jsx,ts,tsx,md,mdx}',
+    './app/**/*.{js,jsx,ts,tsx,md,mdx}',
+    './src/**/*.{js,jsx,ts,tsx,md,mdx}',
   ],
   theme: {
-    extend: {
-      colors: {
-        "sharp": "#ffffff20",
-        "thicksharp": "#ffffff60"
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
       }
     }
   },
+  rippleui: {
+    removeThemes: ["dark"],
+    themes: [
+      {
+        themeName: "light",
+        colorScheme: "light",
+        colors: {
+          primary: "#F88700",
+          backgroundPrimary: "#ffffff",
+        }
+      }]
+  },
   plugins: [
-    require("@savvywombat/tailwindcss-grid-areas")
-  ],
+    require("tailwindcss-animate"),
+    require("rippleui")
+  ]
 }
